@@ -36,7 +36,7 @@ To make the classes independent of this task a dependency container object was m
 Unfortunately, this PoC project does not have tests and it was not created using the TDD method. Should not write production code without tests. The clean code makes the project testable as well. This testability should be used during development, and TDD is worth a try either.
 
 A demo server is available for this project, which was written in python and it is available at [this link](https://github.com/losadrian/demoSmartHomeServer).
-If you are not interested in this part, the project can be tested by changing the build configuration in the current scheme to Mockito (I came from Java world ^_^").
+If you are not interested in this part, the project can be tested by changing the build configuration in the current scheme to Mockito (I came from Java world ^_^"). The Mockito configuration is on by default. If you would like to use the demo together with the server, set it back to Debug configuration.
 
 Resources:
 - https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html

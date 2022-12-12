@@ -1,0 +1,869 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9812ABC6294773A900C1E698 /* SmartDeviceListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9812ABC5294773A900C1E698 /* SmartDeviceListItemView.swift */; };
+		98884775293E3A9D00BDFD36 /* demoSmartHomeClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98884774293E3A9D00BDFD36 /* demoSmartHomeClientApp.swift */; };
+		98884779293E3A9D00BDFD36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98884778293E3A9D00BDFD36 /* Assets.xcassets */; };
+		9888477C293E3A9D00BDFD36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9888477B293E3A9D00BDFD36 /* Preview Assets.xcassets */; };
+		98884788293E3B2700BDFD36 /* ExtensionLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98884785293E3B2700BDFD36 /* ExtensionLibrary.swift */; };
+		98884789293E3B2700BDFD36 /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98884787293E3B2700BDFD36 /* MockAPIClient.swift */; };
+		9888478C293E3B2E00BDFD36 /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9888478B293E3B2E00BDFD36 /* ViewModelFactory.swift */; };
+		98884792293E3B3500BDFD36 /* LocalizedAlertError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9888478E293E3B3500BDFD36 /* LocalizedAlertError.swift */; };
+		98884793293E3B3500BDFD36 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9888478F293E3B3500BDFD36 /* APIError.swift */; };
+		98884794293E3B3500BDFD36 /* ApplicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98884790293E3B3500BDFD36 /* ApplicationError.swift */; };
+		98884795293E3B3500BDFD36 /* ApplicationLocalizedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98884791293E3B3500BDFD36 /* ApplicationLocalizedError.swift */; };
+		988847AF293E3B4C00BDFD36 /* APIClientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98884798293E3B4C00BDFD36 /* APIClientType.swift */; };
+		988847B0293E3B4C00BDFD36 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98884799293E3B4C00BDFD36 /* APIClient.swift */; };
+		988847B1293E3B4C00BDFD36 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9888479A293E3B4C00BDFD36 /* RequestBuilder.swift */; };
+		988847B2293E3B4C00BDFD36 /* SmartHomeAuthenticationRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9888479C293E3B4C00BDFD36 /* SmartHomeAuthenticationRequestModel.swift */; };
+		988847B3293E3B4C00BDFD36 /* SmartHomeListResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9888479D293E3B4C00BDFD36 /* SmartHomeListResponseModel.swift */; };
+		988847B4293E3B4C00BDFD36 /* DeviceListResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9888479E293E3B4C00BDFD36 /* DeviceListResponseModel.swift */; };
+		988847B5293E3B4C00BDFD36 /* GeneralSuccessResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9888479F293E3B4C00BDFD36 /* GeneralSuccessResponseModel.swift */; };
+		988847B6293E3B4C00BDFD36 /* ErrorResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847A0293E3B4C00BDFD36 /* ErrorResponseModel.swift */; };
+		988847B7293E3B4C00BDFD36 /* AddDeviceRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847A1293E3B4C00BDFD36 /* AddDeviceRequestModel.swift */; };
+		988847B8293E3B4C00BDFD36 /* PathBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847A2293E3B4C00BDFD36 /* PathBuilder.swift */; };
+		988847B9293E3B4C00BDFD36 /* NetworkMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847A4293E3B4C00BDFD36 /* NetworkMethod.swift */; };
+		988847BA293E3B4C00BDFD36 /* NetworkPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847A5293E3B4C00BDFD36 /* NetworkPublisher.swift */; };
+		988847BB293E3B4C00BDFD36 /* CoreDataEntityMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847A8293E3B4C00BDFD36 /* CoreDataEntityMapping.swift */; };
+		988847BC293E3B4C00BDFD36 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847A9293E3B4C00BDFD36 /* CoreDataStack.swift */; };
+		988847BD293E3B4C00BDFD36 /* SmartHomeManagerModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 988847AA293E3B4C00BDFD36 /* SmartHomeManagerModel.xcdatamodeld */; };
+		988847BE293E3B4C00BDFD36 /* CoreDataQueriesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847AC293E3B4C00BDFD36 /* CoreDataQueriesStorage.swift */; };
+		988847BF293E3B4C00BDFD36 /* KeychainRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847AE293E3B4C00BDFD36 /* KeychainRepository.swift */; };
+		988847D8293E3B5900BDFD36 /* SmartDeviceRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847C3293E3B5900BDFD36 /* SmartDeviceRepository.swift */; };
+		988847D9293E3B5900BDFD36 /* CredentialsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847C4293E3B5900BDFD36 /* CredentialsRepository.swift */; };
+		988847DA293E3B5900BDFD36 /* PersistentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847C5293E3B5900BDFD36 /* PersistentRepository.swift */; };
+		988847DB293E3B5900BDFD36 /* SmartHomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847C6293E3B5900BDFD36 /* SmartHomeRepository.swift */; };
+		988847DC293E3B5900BDFD36 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847C7293E3B5900BDFD36 /* UseCase.swift */; };
+		988847DD293E3B5900BDFD36 /* AddSmartDeviceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847CA293E3B5900BDFD36 /* AddSmartDeviceUseCase.swift */; };
+		988847DE293E3B5900BDFD36 /* RemoveDevicesFromSmartHomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847CB293E3B5900BDFD36 /* RemoveDevicesFromSmartHomeUseCase.swift */; };
+		988847DF293E3B5900BDFD36 /* RemoveSmartDevicesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847CC293E3B5900BDFD36 /* RemoveSmartDevicesUseCase.swift */; };
+		988847E0293E3B5900BDFD36 /* FetchDevicesOfSmartHomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847CD293E3B5900BDFD36 /* FetchDevicesOfSmartHomeUseCase.swift */; };
+		988847E1293E3B5900BDFD36 /* FetchAllSmartDeviceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847CE293E3B5900BDFD36 /* FetchAllSmartDeviceUseCase.swift */; };
+		988847E2293E3B5900BDFD36 /* SearchSmartDeviceUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847CF293E3B5900BDFD36 /* SearchSmartDeviceUseCase.swift */; };
+		988847E3293E3B5900BDFD36 /* DeauthenticateUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847D1293E3B5900BDFD36 /* DeauthenticateUserUseCase.swift */; };
+		988847E4293E3B5900BDFD36 /* AuthenticateUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847D2293E3B5900BDFD36 /* AuthenticateUserUseCase.swift */; };
+		988847E5293E3B5900BDFD36 /* FetchAllSmartHomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847D3293E3B5900BDFD36 /* FetchAllSmartHomeUseCase.swift */; };
+		988847E6293E3B5900BDFD36 /* SmartDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847D5293E3B5900BDFD36 /* SmartDevice.swift */; };
+		988847E7293E3B5900BDFD36 /* SmartHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847D6293E3B5900BDFD36 /* SmartHome.swift */; };
+		988847E8293E3B5900BDFD36 /* SmartHomeAuthCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847D7293E3B5900BDFD36 /* SmartHomeAuthCredential.swift */; };
+		988847FA293E3B5F00BDFD36 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847EB293E3B5F00BDFD36 /* Styles.swift */; };
+		988847FB293E3B5F00BDFD36 /* SmartHomeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847EE293E3B5F00BDFD36 /* SmartHomeListViewModel.swift */; };
+		988847FC293E3B5F00BDFD36 /* SmartHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847F0293E3B5F00BDFD36 /* SmartHomeView.swift */; };
+		988847FD293E3B5F00BDFD36 /* SmartHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847F1293E3B5F00BDFD36 /* SmartHomeViewModel.swift */; };
+		988847FE293E3B5F00BDFD36 /* SmartHomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847F2293E3B5F00BDFD36 /* SmartHomeListView.swift */; };
+		988847FF293E3B5F00BDFD36 /* AddDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847F5293E3B5F00BDFD36 /* AddDeviceView.swift */; };
+		98884800293E3B5F00BDFD36 /* SearchDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847F6293E3B5F00BDFD36 /* SearchDeviceView.swift */; };
+		98884801293E3B5F00BDFD36 /* SmartDeviceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847F7293E3B5F00BDFD36 /* SmartDeviceListView.swift */; };
+		98884802293E3B5F00BDFD36 /* SmartDeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847F8293E3B5F00BDFD36 /* SmartDeviceViewModel.swift */; };
+		98884803293E3B5F00BDFD36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988847F9293E3B5F00BDFD36 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9812ABC5294773A900C1E698 /* SmartDeviceListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartDeviceListItemView.swift; sourceTree = "<group>"; };
+		98884771293E3A9D00BDFD36 /* demoSmartHomeClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demoSmartHomeClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98884774293E3A9D00BDFD36 /* demoSmartHomeClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoSmartHomeClientApp.swift; sourceTree = "<group>"; };
+		98884778293E3A9D00BDFD36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9888477B293E3A9D00BDFD36 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		98884785293E3B2700BDFD36 /* ExtensionLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionLibrary.swift; sourceTree = "<group>"; };
+		98884787293E3B2700BDFD36 /* MockAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
+		9888478B293E3B2E00BDFD36 /* ViewModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
+		9888478E293E3B3500BDFD36 /* LocalizedAlertError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedAlertError.swift; sourceTree = "<group>"; };
+		9888478F293E3B3500BDFD36 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		98884790293E3B3500BDFD36 /* ApplicationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationError.swift; sourceTree = "<group>"; };
+		98884791293E3B3500BDFD36 /* ApplicationLocalizedError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationLocalizedError.swift; sourceTree = "<group>"; };
+		98884798293E3B4C00BDFD36 /* APIClientType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientType.swift; sourceTree = "<group>"; };
+		98884799293E3B4C00BDFD36 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		9888479A293E3B4C00BDFD36 /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		9888479C293E3B4C00BDFD36 /* SmartHomeAuthenticationRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartHomeAuthenticationRequestModel.swift; sourceTree = "<group>"; };
+		9888479D293E3B4C00BDFD36 /* SmartHomeListResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartHomeListResponseModel.swift; sourceTree = "<group>"; };
+		9888479E293E3B4C00BDFD36 /* DeviceListResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceListResponseModel.swift; sourceTree = "<group>"; };
+		9888479F293E3B4C00BDFD36 /* GeneralSuccessResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralSuccessResponseModel.swift; sourceTree = "<group>"; };
+		988847A0293E3B4C00BDFD36 /* ErrorResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponseModel.swift; sourceTree = "<group>"; };
+		988847A1293E3B4C00BDFD36 /* AddDeviceRequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDeviceRequestModel.swift; sourceTree = "<group>"; };
+		988847A2293E3B4C00BDFD36 /* PathBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathBuilder.swift; sourceTree = "<group>"; };
+		988847A4293E3B4C00BDFD36 /* NetworkMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMethod.swift; sourceTree = "<group>"; };
+		988847A5293E3B4C00BDFD36 /* NetworkPublisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkPublisher.swift; sourceTree = "<group>"; };
+		988847A8293E3B4C00BDFD36 /* CoreDataEntityMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataEntityMapping.swift; sourceTree = "<group>"; };
+		988847A9293E3B4C00BDFD36 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		988847AB293E3B4C00BDFD36 /* SmartHomeManagerModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartHomeManagerModel.xcdatamodel; sourceTree = "<group>"; };
+		988847AC293E3B4C00BDFD36 /* CoreDataQueriesStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataQueriesStorage.swift; sourceTree = "<group>"; };
+		988847AE293E3B4C00BDFD36 /* KeychainRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainRepository.swift; sourceTree = "<group>"; };
+		988847C3293E3B5900BDFD36 /* SmartDeviceRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartDeviceRepository.swift; sourceTree = "<group>"; };
+		988847C4293E3B5900BDFD36 /* CredentialsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsRepository.swift; sourceTree = "<group>"; };
+		988847C5293E3B5900BDFD36 /* PersistentRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentRepository.swift; sourceTree = "<group>"; };
+		988847C6293E3B5900BDFD36 /* SmartHomeRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartHomeRepository.swift; sourceTree = "<group>"; };
+		988847C7293E3B5900BDFD36 /* UseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		988847CA293E3B5900BDFD36 /* AddSmartDeviceUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSmartDeviceUseCase.swift; sourceTree = "<group>"; };
+		988847CB293E3B5900BDFD36 /* RemoveDevicesFromSmartHomeUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveDevicesFromSmartHomeUseCase.swift; sourceTree = "<group>"; };
+		988847CC293E3B5900BDFD36 /* RemoveSmartDevicesUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveSmartDevicesUseCase.swift; sourceTree = "<group>"; };
+		988847CD293E3B5900BDFD36 /* FetchDevicesOfSmartHomeUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchDevicesOfSmartHomeUseCase.swift; sourceTree = "<group>"; };
+		988847CE293E3B5900BDFD36 /* FetchAllSmartDeviceUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchAllSmartDeviceUseCase.swift; sourceTree = "<group>"; };
+		988847CF293E3B5900BDFD36 /* SearchSmartDeviceUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSmartDeviceUseCase.swift; sourceTree = "<group>"; };
+		988847D1293E3B5900BDFD36 /* DeauthenticateUserUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeauthenticateUserUseCase.swift; sourceTree = "<group>"; };
+		988847D2293E3B5900BDFD36 /* AuthenticateUserUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticateUserUseCase.swift; sourceTree = "<group>"; };
+		988847D3293E3B5900BDFD36 /* FetchAllSmartHomeUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchAllSmartHomeUseCase.swift; sourceTree = "<group>"; };
+		988847D5293E3B5900BDFD36 /* SmartDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartDevice.swift; sourceTree = "<group>"; };
+		988847D6293E3B5900BDFD36 /* SmartHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartHome.swift; sourceTree = "<group>"; };
+		988847D7293E3B5900BDFD36 /* SmartHomeAuthCredential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartHomeAuthCredential.swift; sourceTree = "<group>"; };
+		988847EB293E3B5F00BDFD36 /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		988847EE293E3B5F00BDFD36 /* SmartHomeListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartHomeListViewModel.swift; sourceTree = "<group>"; };
+		988847F0293E3B5F00BDFD36 /* SmartHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartHomeView.swift; sourceTree = "<group>"; };
+		988847F1293E3B5F00BDFD36 /* SmartHomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartHomeViewModel.swift; sourceTree = "<group>"; };
+		988847F2293E3B5F00BDFD36 /* SmartHomeListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartHomeListView.swift; sourceTree = "<group>"; };
+		988847F5293E3B5F00BDFD36 /* AddDeviceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDeviceView.swift; sourceTree = "<group>"; };
+		988847F6293E3B5F00BDFD36 /* SearchDeviceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDeviceView.swift; sourceTree = "<group>"; };
+		988847F7293E3B5F00BDFD36 /* SmartDeviceListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartDeviceListView.swift; sourceTree = "<group>"; };
+		988847F8293E3B5F00BDFD36 /* SmartDeviceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartDeviceViewModel.swift; sourceTree = "<group>"; };
+		988847F9293E3B5F00BDFD36 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9888476E293E3A9D00BDFD36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98884768293E3A9D00BDFD36 = {
+			isa = PBXGroup;
+			children = (
+				98884773293E3A9D00BDFD36 /* demoSmartHomeClient */,
+				98884772293E3A9D00BDFD36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98884772293E3A9D00BDFD36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98884771293E3A9D00BDFD36 /* demoSmartHomeClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98884773293E3A9D00BDFD36 /* demoSmartHomeClient */ = {
+			isa = PBXGroup;
+			children = (
+				98884782293E3AAF00BDFD36 /* Application */,
+				98884796293E3B4C00BDFD36 /* Data */,
+				988847C0293E3B5900BDFD36 /* Domain */,
+				988847E9293E3B5F00BDFD36 /* Presentation */,
+			);
+			path = demoSmartHomeClient;
+			sourceTree = "<group>";
+		};
+		9888477A293E3A9D00BDFD36 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9888477B293E3A9D00BDFD36 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		98884782293E3AAF00BDFD36 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				98884784293E3B2700BDFD36 /* AppUtils */,
+				9888478A293E3B2E00BDFD36 /* DependencyInjection */,
+				9888478D293E3B3500BDFD36 /* Errors */,
+				98884774293E3A9D00BDFD36 /* demoSmartHomeClientApp.swift */,
+				98884783293E3ACA00BDFD36 /* Resources */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		98884783293E3ACA00BDFD36 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				98884778293E3A9D00BDFD36 /* Assets.xcassets */,
+				9888477A293E3A9D00BDFD36 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		98884784293E3B2700BDFD36 /* AppUtils */ = {
+			isa = PBXGroup;
+			children = (
+				98884785293E3B2700BDFD36 /* ExtensionLibrary.swift */,
+				98884786293E3B2700BDFD36 /* Mockito */,
+			);
+			path = AppUtils;
+			sourceTree = "<group>";
+		};
+		98884786293E3B2700BDFD36 /* Mockito */ = {
+			isa = PBXGroup;
+			children = (
+				98884787293E3B2700BDFD36 /* MockAPIClient.swift */,
+			);
+			path = Mockito;
+			sourceTree = "<group>";
+		};
+		9888478A293E3B2E00BDFD36 /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				9888478B293E3B2E00BDFD36 /* ViewModelFactory.swift */,
+			);
+			path = DependencyInjection;
+			sourceTree = "<group>";
+		};
+		9888478D293E3B3500BDFD36 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				9888478E293E3B3500BDFD36 /* LocalizedAlertError.swift */,
+				9888478F293E3B3500BDFD36 /* APIError.swift */,
+				98884790293E3B3500BDFD36 /* ApplicationError.swift */,
+				98884791293E3B3500BDFD36 /* ApplicationLocalizedError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		98884796293E3B4C00BDFD36 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				98884797293E3B4C00BDFD36 /* Networking */,
+				988847A6293E3B4C00BDFD36 /* Persistence */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		98884797293E3B4C00BDFD36 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				98884798293E3B4C00BDFD36 /* APIClientType.swift */,
+				98884799293E3B4C00BDFD36 /* APIClient.swift */,
+				9888479A293E3B4C00BDFD36 /* RequestBuilder.swift */,
+				9888479B293E3B4C00BDFD36 /* ApiModel */,
+				988847A2293E3B4C00BDFD36 /* PathBuilder.swift */,
+				988847A3293E3B4C00BDFD36 /* NetworkingEnums */,
+				988847A5293E3B4C00BDFD36 /* NetworkPublisher.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9888479B293E3B4C00BDFD36 /* ApiModel */ = {
+			isa = PBXGroup;
+			children = (
+				9888479C293E3B4C00BDFD36 /* SmartHomeAuthenticationRequestModel.swift */,
+				9888479D293E3B4C00BDFD36 /* SmartHomeListResponseModel.swift */,
+				9888479E293E3B4C00BDFD36 /* DeviceListResponseModel.swift */,
+				9888479F293E3B4C00BDFD36 /* GeneralSuccessResponseModel.swift */,
+				988847A0293E3B4C00BDFD36 /* ErrorResponseModel.swift */,
+				988847A1293E3B4C00BDFD36 /* AddDeviceRequestModel.swift */,
+			);
+			path = ApiModel;
+			sourceTree = "<group>";
+		};
+		988847A3293E3B4C00BDFD36 /* NetworkingEnums */ = {
+			isa = PBXGroup;
+			children = (
+				988847A4293E3B4C00BDFD36 /* NetworkMethod.swift */,
+			);
+			path = NetworkingEnums;
+			sourceTree = "<group>";
+		};
+		988847A6293E3B4C00BDFD36 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				988847A7293E3B4C00BDFD36 /* CoreData */,
+				988847AD293E3B4C00BDFD36 /* Keychain */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		988847A7293E3B4C00BDFD36 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				988847A8293E3B4C00BDFD36 /* CoreDataEntityMapping.swift */,
+				988847A9293E3B4C00BDFD36 /* CoreDataStack.swift */,
+				988847AA293E3B4C00BDFD36 /* SmartHomeManagerModel.xcdatamodeld */,
+				988847AC293E3B4C00BDFD36 /* CoreDataQueriesStorage.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		988847AD293E3B4C00BDFD36 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				988847AE293E3B4C00BDFD36 /* KeychainRepository.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		988847C0293E3B5900BDFD36 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				988847C1293E3B5900BDFD36 /* Protocols */,
+				988847C8293E3B5900BDFD36 /* UseCases */,
+				988847D4293E3B5900BDFD36 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		988847C1293E3B5900BDFD36 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				988847C2293E3B5900BDFD36 /* RepositoryProtocols */,
+				988847C7293E3B5900BDFD36 /* UseCase.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		988847C2293E3B5900BDFD36 /* RepositoryProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				988847C3293E3B5900BDFD36 /* SmartDeviceRepository.swift */,
+				988847C4293E3B5900BDFD36 /* CredentialsRepository.swift */,
+				988847C5293E3B5900BDFD36 /* PersistentRepository.swift */,
+				988847C6293E3B5900BDFD36 /* SmartHomeRepository.swift */,
+			);
+			path = RepositoryProtocols;
+			sourceTree = "<group>";
+		};
+		988847C8293E3B5900BDFD36 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				988847C9293E3B5900BDFD36 /* SmartHomeUseCases */,
+				988847D0293E3B5900BDFD36 /* SmartDeviceUseCases */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		988847C9293E3B5900BDFD36 /* SmartHomeUseCases */ = {
+			isa = PBXGroup;
+			children = (
+				988847D1293E3B5900BDFD36 /* DeauthenticateUserUseCase.swift */,
+				988847D2293E3B5900BDFD36 /* AuthenticateUserUseCase.swift */,
+				988847D3293E3B5900BDFD36 /* FetchAllSmartHomeUseCase.swift */,
+			);
+			path = SmartHomeUseCases;
+			sourceTree = "<group>";
+		};
+		988847D0293E3B5900BDFD36 /* SmartDeviceUseCases */ = {
+			isa = PBXGroup;
+			children = (
+				988847CA293E3B5900BDFD36 /* AddSmartDeviceUseCase.swift */,
+				988847CB293E3B5900BDFD36 /* RemoveDevicesFromSmartHomeUseCase.swift */,
+				988847CC293E3B5900BDFD36 /* RemoveSmartDevicesUseCase.swift */,
+				988847CD293E3B5900BDFD36 /* FetchDevicesOfSmartHomeUseCase.swift */,
+				988847CE293E3B5900BDFD36 /* FetchAllSmartDeviceUseCase.swift */,
+				988847CF293E3B5900BDFD36 /* SearchSmartDeviceUseCase.swift */,
+			);
+			path = SmartDeviceUseCases;
+			sourceTree = "<group>";
+		};
+		988847D4293E3B5900BDFD36 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				988847D5293E3B5900BDFD36 /* SmartDevice.swift */,
+				988847D6293E3B5900BDFD36 /* SmartHome.swift */,
+				988847D7293E3B5900BDFD36 /* SmartHomeAuthCredential.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		988847E9293E3B5F00BDFD36 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				988847EA293E3B5F00BDFD36 /* SharedViewsStyles */,
+				988847EC293E3B5F00BDFD36 /* Scenes */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		988847EA293E3B5F00BDFD36 /* SharedViewsStyles */ = {
+			isa = PBXGroup;
+			children = (
+				988847EB293E3B5F00BDFD36 /* Styles.swift */,
+				9812ABC5294773A900C1E698 /* SmartDeviceListItemView.swift */,
+			);
+			path = SharedViewsStyles;
+			sourceTree = "<group>";
+		};
+		988847EC293E3B5F00BDFD36 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				988847ED293E3B5F00BDFD36 /* SmartHomeList */,
+				988847F3293E3B5F00BDFD36 /* SmartDeviceList */,
+				988847F9293E3B5F00BDFD36 /* ContentView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		988847ED293E3B5F00BDFD36 /* SmartHomeList */ = {
+			isa = PBXGroup;
+			children = (
+				988847EE293E3B5F00BDFD36 /* SmartHomeListViewModel.swift */,
+				988847EF293E3B5F00BDFD36 /* SubViews */,
+				988847F2293E3B5F00BDFD36 /* SmartHomeListView.swift */,
+			);
+			path = SmartHomeList;
+			sourceTree = "<group>";
+		};
+		988847EF293E3B5F00BDFD36 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				988847F0293E3B5F00BDFD36 /* SmartHomeView.swift */,
+				988847F1293E3B5F00BDFD36 /* SmartHomeViewModel.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		988847F3293E3B5F00BDFD36 /* SmartDeviceList */ = {
+			isa = PBXGroup;
+			children = (
+				988847F4293E3B5F00BDFD36 /* SubViews */,
+				988847F7293E3B5F00BDFD36 /* SmartDeviceListView.swift */,
+				988847F8293E3B5F00BDFD36 /* SmartDeviceViewModel.swift */,
+			);
+			path = SmartDeviceList;
+			sourceTree = "<group>";
+		};
+		988847F4293E3B5F00BDFD36 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				988847F5293E3B5F00BDFD36 /* AddDeviceView.swift */,
+				988847F6293E3B5F00BDFD36 /* SearchDeviceView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98884770293E3A9D00BDFD36 /* demoSmartHomeClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9888477F293E3A9D00BDFD36 /* Build configuration list for PBXNativeTarget "demoSmartHomeClient" */;
+			buildPhases = (
+				9888476D293E3A9D00BDFD36 /* Sources */,
+				9888476E293E3A9D00BDFD36 /* Frameworks */,
+				9888476F293E3A9D00BDFD36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = demoSmartHomeClient;
+			productName = demoSmartHomeClient;
+			productReference = 98884771293E3A9D00BDFD36 /* demoSmartHomeClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98884769293E3A9D00BDFD36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					98884770293E3A9D00BDFD36 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 9888476C293E3A9D00BDFD36 /* Build configuration list for PBXProject "demoSmartHomeClient" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98884768293E3A9D00BDFD36;
+			productRefGroup = 98884772293E3A9D00BDFD36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98884770293E3A9D00BDFD36 /* demoSmartHomeClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9888476F293E3A9D00BDFD36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9888477C293E3A9D00BDFD36 /* Preview Assets.xcassets in Resources */,
+				98884779293E3A9D00BDFD36 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9888476D293E3A9D00BDFD36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				988847DE293E3B5900BDFD36 /* RemoveDevicesFromSmartHomeUseCase.swift in Sources */,
+				988847BD293E3B4C00BDFD36 /* SmartHomeManagerModel.xcdatamodeld in Sources */,
+				988847E0293E3B5900BDFD36 /* FetchDevicesOfSmartHomeUseCase.swift in Sources */,
+				988847B8293E3B4C00BDFD36 /* PathBuilder.swift in Sources */,
+				98884792293E3B3500BDFD36 /* LocalizedAlertError.swift in Sources */,
+				98884775293E3A9D00BDFD36 /* demoSmartHomeClientApp.swift in Sources */,
+				988847B2293E3B4C00BDFD36 /* SmartHomeAuthenticationRequestModel.swift in Sources */,
+				988847FB293E3B5F00BDFD36 /* SmartHomeListViewModel.swift in Sources */,
+				988847E4293E3B5900BDFD36 /* AuthenticateUserUseCase.swift in Sources */,
+				9812ABC6294773A900C1E698 /* SmartDeviceListItemView.swift in Sources */,
+				988847FE293E3B5F00BDFD36 /* SmartHomeListView.swift in Sources */,
+				98884803293E3B5F00BDFD36 /* ContentView.swift in Sources */,
+				988847E5293E3B5900BDFD36 /* FetchAllSmartHomeUseCase.swift in Sources */,
+				988847B5293E3B4C00BDFD36 /* GeneralSuccessResponseModel.swift in Sources */,
+				988847DD293E3B5900BDFD36 /* AddSmartDeviceUseCase.swift in Sources */,
+				988847D9293E3B5900BDFD36 /* CredentialsRepository.swift in Sources */,
+				9888478C293E3B2E00BDFD36 /* ViewModelFactory.swift in Sources */,
+				988847B0293E3B4C00BDFD36 /* APIClient.swift in Sources */,
+				988847E1293E3B5900BDFD36 /* FetchAllSmartDeviceUseCase.swift in Sources */,
+				98884788293E3B2700BDFD36 /* ExtensionLibrary.swift in Sources */,
+				988847FF293E3B5F00BDFD36 /* AddDeviceView.swift in Sources */,
+				988847DB293E3B5900BDFD36 /* SmartHomeRepository.swift in Sources */,
+				988847B4293E3B4C00BDFD36 /* DeviceListResponseModel.swift in Sources */,
+				98884802293E3B5F00BDFD36 /* SmartDeviceViewModel.swift in Sources */,
+				988847B3293E3B4C00BDFD36 /* SmartHomeListResponseModel.swift in Sources */,
+				98884794293E3B3500BDFD36 /* ApplicationError.swift in Sources */,
+				988847B9293E3B4C00BDFD36 /* NetworkMethod.swift in Sources */,
+				988847E2293E3B5900BDFD36 /* SearchSmartDeviceUseCase.swift in Sources */,
+				988847DC293E3B5900BDFD36 /* UseCase.swift in Sources */,
+				988847DA293E3B5900BDFD36 /* PersistentRepository.swift in Sources */,
+				98884789293E3B2700BDFD36 /* MockAPIClient.swift in Sources */,
+				988847E3293E3B5900BDFD36 /* DeauthenticateUserUseCase.swift in Sources */,
+				988847BB293E3B4C00BDFD36 /* CoreDataEntityMapping.swift in Sources */,
+				988847BA293E3B4C00BDFD36 /* NetworkPublisher.swift in Sources */,
+				98884800293E3B5F00BDFD36 /* SearchDeviceView.swift in Sources */,
+				988847DF293E3B5900BDFD36 /* RemoveSmartDevicesUseCase.swift in Sources */,
+				988847FA293E3B5F00BDFD36 /* Styles.swift in Sources */,
+				988847B1293E3B4C00BDFD36 /* RequestBuilder.swift in Sources */,
+				988847B7293E3B4C00BDFD36 /* AddDeviceRequestModel.swift in Sources */,
+				988847BC293E3B4C00BDFD36 /* CoreDataStack.swift in Sources */,
+				98884793293E3B3500BDFD36 /* APIError.swift in Sources */,
+				988847E8293E3B5900BDFD36 /* SmartHomeAuthCredential.swift in Sources */,
+				988847BF293E3B4C00BDFD36 /* KeychainRepository.swift in Sources */,
+				988847D8293E3B5900BDFD36 /* SmartDeviceRepository.swift in Sources */,
+				988847E6293E3B5900BDFD36 /* SmartDevice.swift in Sources */,
+				988847FC293E3B5F00BDFD36 /* SmartHomeView.swift in Sources */,
+				988847B6293E3B4C00BDFD36 /* ErrorResponseModel.swift in Sources */,
+				988847BE293E3B4C00BDFD36 /* CoreDataQueriesStorage.swift in Sources */,
+				988847E7293E3B5900BDFD36 /* SmartHome.swift in Sources */,
+				988847FD293E3B5F00BDFD36 /* SmartHomeViewModel.swift in Sources */,
+				98884795293E3B3500BDFD36 /* ApplicationLocalizedError.swift in Sources */,
+				98884801293E3B5F00BDFD36 /* SmartDeviceListView.swift in Sources */,
+				988847AF293E3B4C00BDFD36 /* APIClientType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9888477D293E3A9D00BDFD36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9888477E293E3A9D00BDFD36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98884780293E3A9D00BDFD36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"demoSmartHomeClient/Application/Resources/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.losadrian.demoSmartHomeClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98884781293E3A9D00BDFD36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"demoSmartHomeClient/Application/Resources/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.losadrian.demoSmartHomeClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		98884804293E3B8200BDFD36 /* Mockito */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = "DEBUG MOCKITO";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Mockito;
+		};
+		98884805293E3B8200BDFD36 /* Mockito */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"demoSmartHomeClient/Application/Resources/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.losadrian.demoSmartHomeClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Mockito;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9888476C293E3A9D00BDFD36 /* Build configuration list for PBXProject "demoSmartHomeClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9888477D293E3A9D00BDFD36 /* Debug */,
+				98884804293E3B8200BDFD36 /* Mockito */,
+				9888477E293E3A9D00BDFD36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9888477F293E3A9D00BDFD36 /* Build configuration list for PBXNativeTarget "demoSmartHomeClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98884780293E3A9D00BDFD36 /* Debug */,
+				98884805293E3B8200BDFD36 /* Mockito */,
+				98884781293E3A9D00BDFD36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		988847AA293E3B4C00BDFD36 /* SmartHomeManagerModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				988847AB293E3B4C00BDFD36 /* SmartHomeManagerModel.xcdatamodel */,
+			);
+			currentVersion = 988847AB293E3B4C00BDFD36 /* SmartHomeManagerModel.xcdatamodel */;
+			path = SmartHomeManagerModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 98884769293E3A9D00BDFD36 /* Project object */;
+}

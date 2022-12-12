@@ -1,0 +1,3 @@
+protocol UseCase {
+    func execute()
+}
